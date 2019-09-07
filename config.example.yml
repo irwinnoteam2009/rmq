@@ -1,0 +1,9 @@
+logger:
+  level: debug
+  format: console
+
+mq:
+  url: ""
+  auto_ack: true
+  reconnect_time: 10m
+  

@@ -2,6 +2,9 @@ package main
 
 import (
 	"os"
+	"time"
+
+	"rmq/internal/config"
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
@@ -21,4 +24,11 @@ func main() {
 		Str("revision", Revision).
 		Int("pid", os.Getpid()).
 		Msg("started")
+
+	c, err := config.Load("config.example.json")
+	if err != nil {
+		log.Panic().Err(err).Msg("can't load config")
+	}
+	log.Info().Str("level", c.Logger.Level).Msg("logger")
+	log.Info().Dur("timeout", time.Duration(*c.MQ.ReconnectTime)).Msg("duration")
 }

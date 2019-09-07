@@ -1,5 +1,14 @@
+# github.com/pelletier/go-toml v1.2.0
+github.com/pelletier/go-toml
 # github.com/rs/zerolog v1.15.0
 github.com/rs/zerolog
 github.com/rs/zerolog/log
 github.com/rs/zerolog/internal/cbor
 github.com/rs/zerolog/internal/json
+# github.com/stevenroose/gonfig v0.1.4
+github.com/stevenroose/gonfig
+# golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# gopkg.in/yaml.v2 v2.2.2
+gopkg.in/yaml.v2
