@@ -7,6 +7,8 @@ github.com/rs/zerolog/internal/cbor
 github.com/rs/zerolog/internal/json
 # github.com/stevenroose/gonfig v0.1.4
 github.com/stevenroose/gonfig
+# github.com/streadway/amqp v0.0.0-20190827072141-edfb9018d271
+github.com/streadway/amqp
 # golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a
 golang.org/x/sys/unix
 golang.org/x/sys/windows

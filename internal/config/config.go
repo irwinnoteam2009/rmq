@@ -23,7 +23,7 @@ func Load(filename string) (*Config, error) {
 	var cfg Config
 	err := gonfig.Load(&cfg, gonfig.Conf{
 		ConfigFileVariable:  "config",
-		FileDefaultFilename: "config.example.yml",
+		FileDefaultFilename: filename,
 		EnvPrefix:           "rmq_",
 		FileDecoder:         gonfig.DecoderTryAll,
 	})

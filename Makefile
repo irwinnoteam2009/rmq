@@ -14,6 +14,9 @@ prepare: prepare.lint_tools
 prepare.lint_tools:
 	@$(GO) get -u github.com/golangci/golangci-lint/cmd/golangci-lint
 
+config:
+	cp config.example.yml config.yml
+
 clean:
 	rm -rf ./bin/*
 

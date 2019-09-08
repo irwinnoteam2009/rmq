@@ -1,0 +1,9 @@
+logger:
+  level: debug
+  format: console
+
+mq:
+  url: "amqp://admin:admin@localhost:5672"
+  auto_ack: true
+  reconnect_time: 10m
+  
